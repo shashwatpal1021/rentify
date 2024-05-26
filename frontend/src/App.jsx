@@ -32,14 +32,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/properties" element={<Properties />} />
         <Route path="/signin" element={<Signin />} />
-        <Route path="/addproperty" element={<AddPorperty />} />
-        <Route path='property/:id' element={<PropertyPage />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/profile" element={<Profile />} />
         <Route
           path="/"
           element={<ProtectedRoutes to="/signin" />}
         >
+        <Route path="/profile" element={<Profile />} />
+        <Route path='property/:id' element={<PropertyPage />} />
+        <Route path="/addproperty" element={<AddPorperty />} />
         </Route>
 
       </Routes>

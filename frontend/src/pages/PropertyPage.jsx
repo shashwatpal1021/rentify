@@ -13,6 +13,8 @@ import {
 } from 'react-icons/fa';
 import { useProperties } from '../atoms';
 
+https://github.com/shashwatpal1021/rentify_backend
+
 const PropertyPage = ({ }) => {
   const params = useParams();
   const properties = useProperties()
