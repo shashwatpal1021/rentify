@@ -35,11 +35,10 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route
           path="/"
-          element={<ProtectedRoutes to="/signin" />}
-        >
-        <Route path="/profile" element={<Profile />} />
-        <Route path='property/:id' element={<PropertyPage />} />
-        <Route path="/addproperty" element={<AddPorperty />} />
+          element={<ProtectedRoutes to="/signin" />}        >
+          <Route path="/profile" element={<Profile />} />
+          <Route path='property/:id' element={<PropertyPage />} />
+          <Route path="/addproperty" element={<AddPorperty />} />
         </Route>
 
       </Routes>
